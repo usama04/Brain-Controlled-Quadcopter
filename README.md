@@ -2,7 +2,8 @@
 This work consists of an F450 frame based quadcopter with APM 2.8 controller. Its Roll and Pitch were controlled using a P300 speller.
 
 P300 speller is a remarkable software which uses EEG to identify the character that the operater wants to type. This system was already implemented on OpenVIBE.
-The box file which visualises the P300 speller on OpenVIBE has been modified to save the detected character in the sketchbook folder of pwm_control_desktop_app. This file needs to be replaced in the OpenVIBE source code before building OpenVIBE.
+
+The box file which visualises the P300 speller on OpenVIBE has been modified to save the detected character in the sketchbook folder of pwm_control_desktop_app. This file needs to be replaced in the OpenVIBE source code before building OpenVIBE. Code in this file contains the location of the pwm_control_desktop_app. It needs to be changed according to the locations on different computers. 'Results.txt' only appears near the place where 'Results.txt' file location is present. Therefore a quick search can easily point at the right direction.
 
 The pwm_control_desktop_app is java code which runs on processing. It is a control pannel for our DIY quadcopter. It reads the character in the Results.txt file and sends the corresponding commands to the quadcopter using bluetooth.
 
